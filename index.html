@@ -185,7 +185,7 @@
         }
 
         h3+p {
-            color: #647277;
+            color: #111;
             padding-bottom: 15px;
         }
 
@@ -200,6 +200,14 @@
 
         h2 {
             font-size: 36px;
+        }
+        .sect2 {
+            background:url(./img/bg.jpg) no-repeat;
+            background-position: right bottom;
+            padding-top: 0px;
+        }
+        .sect2 .swiper-pagination2 {
+            padding-bottom:60px;
         }
 
         .sect2 h3 b {
@@ -274,6 +282,10 @@
             font-size: 14px;
         }
 
+        .sect4-5 {
+            padding:0;
+            padding-bottom:60px;
+        }
         .sect5 {
             background: #f0f0f0;
         }
@@ -382,6 +394,7 @@
 
         .sect8 {
             background: rgb(255, 217, 5);
+            padding-top: 90px;
             ;
         }
 
@@ -563,14 +576,14 @@
                 </div>
             </div>
         </div>
-        <div class="swiper-pagination2"></div>
+        
         <div class="sect sect2">
-
+            <div class="swiper-pagination2"></div>
             <div class="sect_wrap">
                 <h3><b>인피녹스</b>는 영국 금융감독원(FCA)<br>규제 아래 운영되는 <br><b>FX & CFD 트레이딩 플랫폼</b>입니다.</h3>
                 <p>
                     <span>A trading platform built to give you the leading edge.</span><br>
-                    외환(FX), 원자재(크루드 오일, 금), 지수(나스닥, 항셍), 주식, 비트코인 등<br>
+                    외환(FX), 원자재(크루드 오일, 금), 지수(나스닥, 항셍), 주식, 비트코인 등
                     전 세계 다양한 금융시장의 상품 거래를 제공하며, 낮은 수수료로 최적의 거래 환경을 제공해드리고 있습니다<br><br>
                     인피녹스는 국제 인허가 취득 및 관리감독을 받는 정식 거래소이며
                     현재 런던 본사를 비롯하여 전 세계 17개국에 위치하고 있습니다.
@@ -585,7 +598,7 @@
             <div class="sect_wrap">
                 <h3>인피녹스의 <br>다양한 거래품목</h3>
                 <p>INFINOX의 글로벌하고 다양한 <br>CFD 상품들을 거래해보세요!</p>
-                <a href="#">거래상품 자세히</a>
+                <a href="https://www.infinoxkorea.com/%EC%9D%B8%ED%94%BC%EB%85%B9%EC%8A%A4%EC%86%8C%EA%B0%9C">거래상품 자세히</a>
                 <ul class="items">
                     <li>
                         <h4>01</h4>
@@ -617,12 +630,12 @@
                 <h3>최적의 트레이딩 엔진,<br>
                     인피녹스 코어!</h3>
                 <p>편리한 인터페이스와 고성능 체결 엔진이 <br>정확한 트레이딩을 돕습니다.</p>
-                <a href="#">이용방법 가이드</a>
+                <a href="https://www.infinoxkorea.com/%EC%9D%B4%EC%9A%A9%EA%B0%80%EC%9D%B4%EB%93%9C">이용방법 가이드</a>
                 <img src="./img/infinox-core.webp" alt="infinox core">
             </div>
         </div>
-        <div class="sect sect4-5" style="padding:0;">
-            <div class="sect_wrap">
+        <div class="sect sect4-5" >
+            <div class="sect_wrap" style="padding:0;">
                 <img style="display:block;" src="./img/infinox7.jpeg" alt="ininox">
             </div>
         </div>
@@ -826,6 +839,22 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
+        const submit = document.querySelector('.sect1 a');
+        const submit2 = document.querySelector('#submit');
+        submit.addEventListener('click', function(e){
+            e.preventDefault();
+            window.scroll({behavior: 'smooth',
+            left: 0,
+            top:document.querySelector('#sect8').offsetTop
+        });
+        })
+        submit2.addEventListener('click', function(e){
+            e.preventDefault();
+            window.scroll({behavior: 'smooth',
+            left: 0,
+            top:document.querySelector('#sect8').offsetTop
+        });
+        })
         const swiper = new Swiper('.swiper', {
             // Optional parameters
             loop: true,
