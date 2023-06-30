@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
+    <script src="https://kit.fontawesome.com/c98356d100.js" crossorigin="anonymous"></script>
 
     <title>INFINOX</title>
     <style>
@@ -76,10 +76,31 @@
             top: 0;
             left: 0;
             z-index: 15;
+            display: flex;
+            flex-direction: row;
+            background: #000;
+            justify-content: space-between;
         }
 
         header h1 {
             color: #fff;
+        }
+
+        header ul {
+            display: flex;
+
+        }
+
+        header li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header li a {
+            background: transparent;
+            padding-left: 10px;
+            font-size: 18px;
         }
 
         .sect {
@@ -89,16 +110,22 @@
         .sect1 {
             background: #000;
             color: #fff;
-            height: 500px;
+            height: 100vh;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
+            flex-direction: column;
+            padding: 0 20px;
 
         }
 
         .sect_wrap {
             max-width: 700px;
             margin: 0 auto;
+        }
+
+        .sect1 h3 {
+            padding-top: 60px;
         }
 
         .sect1::after {
@@ -114,9 +141,23 @@
             top: 0;
             left: 0;
             z-index: 0;
-            height: 500px;
+            height: 100vh;
             opacity: 0.2;
             object-fit: cover;
+        }
+
+        #submit {
+            position: fixed;
+            z-index: 999;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            border-radius: 0;
+            background-color: crimson;
+            font-size: 20px;
+            font-weight: 600;
+            padding: 15px;
+
         }
 
         .sect1 .sect_wrap {
@@ -130,6 +171,7 @@
             background: rgb(20, 32, 59);
             color: #fff;
             padding: 20px 0;
+            width: 100%;
         }
 
         .sect1-5 .sect_wrap {
@@ -406,6 +448,7 @@
             background: #111;
             color: #fff;
             text-align: left;
+            padding-bottom: 100px;
         }
 
         .footer h1 {
@@ -454,8 +497,23 @@
     <div class="wrap">
         <header>
             <h1><img src="img/inf_logo_o.webp" alt="infinox"></h1>
+            <ul>
+                <li>
+                    <a href="https://www.infinoxkorea.com/" class="homepage">
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@INFINOXTradingPower" class="youtube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+            </ul>
         </header>
         <div class="sect sect1">
+            <div class="start">
+                &nbsp;
+            </div>
             <div class="sect_wrap">
                 <h3>트레이딩 플랫폼 그 이상</h3>
                 <h2><b>인피녹스</b>는 당신의 영원한
@@ -463,18 +521,19 @@
                 <br>
 
                 <small><b>외환(FX) & 해외선물 투자를 위한 최고의 선택! </b><br><br>
-                    더욱 더 안전하고 믿을 수 있는 외환, 선물, CFD 거래 브로커를 원한다면<br>
-                    선택은 이미 15개국에서 탄탄한 지지를 받고 있는 <b>인피녹스(INFINOX)</b>입니다.
+                    더욱 더 안전하고 믿을 수 있는 외환, 선물, CFD 거래 브로커를 원한다면
+                    선택은 이미 15개국에서 탄탄한 지지를 받고 있는<br><b>인피녹스(INFINOX)</b>입니다.
                 </small><br><br>
-                <a href="#">체험 신청하기</a>
+                <a href="#sect8">무료체험 신청하기</a>
             </div>
-        </div>
-        <div class="sect sect1-5">
-            <div class="sect_wrap">
-                <p>14년 역사, 전 세계 17개 글로벌 오피스를 가진 <br>영국계 금융사 인피녹스</p>
-            </div>
+            <div class="sect sect11">
+                <!-- <div class="sect_wrap">
+                    <p>14년 역사, 전 세계 17개 글로벌 오피스를 가진 <br>영국계 금융사 인피녹스</p>
+                </div> -->
 
+            </div>
         </div>
+        <a href="#sect8" id="submit">무료체험 신청하기</a>
         <div class="sect sect5-5">
             <div class="sect_wrap">
                 <div class="swiper2">
@@ -669,7 +728,7 @@
                 <img src="img/w6.webp" alt="infinox">
             </div>
         </div>
-        <div class="sect sect8">
+        <div class="sect sect8" id="sect8">
             <h3>매일 쌓이는 수익을 <br>
                 지금 바로 무료로 체험해보세요!</h3>
             <div class="sect_wrap">
