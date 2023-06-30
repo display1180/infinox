@@ -82,6 +82,9 @@
             justify-content: space-between;
         }
 
+        .red {
+            color:crimson;
+        }
         header h1 {
             color: #fff;
         }
@@ -125,7 +128,7 @@
         }
 
         .sect1 h3 {
-            padding-top: 60px;
+            padding-top: 40px;
         }
 
         .sect1::after {
@@ -228,6 +231,10 @@
         .sect3 {
             background: #ffd90c;
         }
+        .sect3 .items .inner  > * {
+            padding-right:75px;
+            display:block;
+        }
 
         .sect3 .items li {
             background: #fff;
@@ -236,7 +243,7 @@
             padding: 20px;
             background-image: url(img/2-1.webp);
             background-position: right center;
-            background-size: contain;
+            background-size: 100px 100%;
             background-repeat: no-repeat;
         }
 
@@ -373,8 +380,9 @@
             color: #3D9BE9;
         }
 
-        .sect7 span {
+        .sect7 .swiper-slide span {
             color: #111;
+            width: 80%;
         }
 
         .sect7-5 {
@@ -601,24 +609,36 @@
                 <a href="https://www.infinoxkorea.com/%EC%9D%B8%ED%94%BC%EB%85%B9%EC%8A%A4%EC%86%8C%EA%B0%9C">거래상품 자세히</a>
                 <ul class="items">
                     <li>
+                        <div class="inner">
                         <h4>01</h4>
                         <h3>외환 (FX)</h3>
                         <b>유로달러, 파운드달러 등</b><span>30종 이상 FX 페어</span>
+                        </div>
+                        
                     </li>
                     <li>
-                        <h4>02</h4>
+                        <div class="inner">
+                            <h4>02</h4>
                         <h3>지수/원자재</h3>
-                        <b>나스닥, 항셍, 크루드오일, 금 등</b><span>30종 이상 지수&원자재 해외선물 / CFD</span>
+                        <b>나스닥, 항셍, 크루드오일, 금 등</b><span>30종 이상 지수&원자재 해외선물 / CFD</span>    
+                        </div>
+                        
                     </li>
                     <li>
-                        <h4>03</h4>
+                        <div class="inner">
+                            <h4>03</h4>
                         <h3>해외주식</h3>
                         <b>애플, 테슬라, 구글, 페이스북 등</b><span>200종 이상 인기 미국 주식 종목 </span>
+                        </div>
+                        
                     </li>
                     <li>
-                        <h4>04</h4>
+                        <div class="inner">
+                             <h4>04</h4>
                         <h3>암호화폐</h3>
                         <b>비트코인, 이더리움, 에이다 등</b><span>20종 이상 코인 마진거래</span>
+                        </div>
+                       
                     </li>
                 </ul>
             </div>
@@ -697,14 +717,14 @@
                             <h3>실시간 수익률 및<br>
                                 <b>시장 분석 제공</b>
                             </h3>
-                            <p>프로 트레이더의 과거 성과(승률 및 ROI 포함)를 확인할 수 있고 <br>
+                            <p>프로 트레이더의 과거 성과(승률 및 ROI 포함)를 확인할 수 있고
                                 시장을 앞서가는데 도움이 되는 요약 정보가 제공됩니다.</p>
                             <img src="./img/swiper1.png" alt="swiper">
                         </div>
                         <div class="swiper-slide">
                             <h3><b>최적의 서버환경</b>을 위한<br>
                                 글로벌 플랫폼</h3>
-                            <p>차트오류 및 투자 시 발생하는 오류를 최소화 하기 위해<br> 안전한 최신 서버를 구축하였습니다.</p>
+                            <p>차트오류 및 투자 시 발생하는 오류를 최소화 하기 위해 안전한 최신 서버를 구축하였습니다.</p>
                             <img src="./img/swiper2.png" alt="swiper">
                         </div>
                         <div class="swiper-slide">
@@ -712,7 +732,7 @@
                                 <b>거래 및 체결</b><br>
                                 ​한 곳에서 원스톱
                             </h3>
-                            <p>INFINOX가 제공하는 최고의 트레이딩 도구를 이용해 <br>
+                            <p>INFINOX가 제공하는 최고의 트레이딩 도구를 이용해 
                                 모든 거래를 한 곳에서 체결할 수 있습니다.</p>
                             <img src="./img/swiper3.png" alt="swiper">
                         </div>
