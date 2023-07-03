@@ -611,8 +611,8 @@
             <h1><img src="img/inf_logo_o.webp" alt="infinox"></h1>
             <ul>
                 <li>
-                    <a href="https://www.infinoxkorea.com/" class="homepage">
-                        <i class="fa-solid fa-house"></i>
+                    <a href="https://www.infinox.com/fsc/ko/registration/live-account" class="homepage">
+                        <i class="fa-solid fa-user"></i>
                     </a>
                 </li>
                 <li>
@@ -636,13 +636,39 @@
                     더욱 더 안전하고 믿을 수 있는 외환, 선물, CFD 거래 브로커를 원한다면
                     선택은 이미 15개국에서 탄탄한 지지를 받고 있는<br><b>인피녹스(INFINOX)</b>입니다.
                 </small><br><br>
-                <a href="#sect8"  data-aos="fade-up"  data-aos-delay="600" >무료체험 신청하기</a>
+                <div class="buttons">
+                    <a href="https://www.infinox.com/fsc/ko/registration/live-account"  data-aos="fade-up"  class="signin" data-aos-delay="600" >실거래 계정 가입하기</a>
+                    <a href="#sect8" class="downto"  data-aos="fade-up"  data-aos-delay="600" >무료체험 신청하기</a>
+                    <a href="http://pf.kakao.com/_xdxmmQxj" class="kakao"  data-aos="fade-up"  data-aos-delay="600" >카톡 문의</a>
+                </div>
+                
             </div>
             <div class="sect sect11">
                 <!-- <div class="sect_wrap">
                     <p>14년 역사, 전 세계 17개 글로벌 오피스를 가진 <br>영국계 금융사 인피녹스</p>
                 </div> -->
-
+                <style>
+                    .buttons {
+                        display:flex;
+                        flex-direction:column;
+                        width: 60%;
+                        margin:0 auto;
+                        gap: 15px;
+                    }
+                    .signin {
+                        background:#333;
+                        color:#fff;
+                    }
+                    
+                    .downto {
+                        background:crimson;
+                        color:#fff;
+                    }
+                    .kakao {
+                        background:#ffd90c;
+                        color:#111;
+                    }
+                </style>
             </div>
         </div>
         <a href="#sect8" id="submit">무료체험 신청하기</a>
@@ -989,7 +1015,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        const submit = document.querySelector('.sect1 a');
+        const submit = document.querySelector('.sect1 a.downto');
         const submit2 = document.querySelector('#submit');
         submit.addEventListener('click', function(e){
             e.preventDefault();
